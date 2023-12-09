@@ -1,0 +1,45 @@
+$primary: #074A75;
+$secondary: #FACC1F;
+$dark: #122641;
+$white: #ffffff;
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "dark": $dark
+);
+
+$border-radius-pill: 3rem;
+$box-shadow: 0 .5rem 1rem rgba($dark, 1);
+$nav-pills-link-active-color: $primary;
+$nav-pills-link-active-bg: $secondary;
+$nav-link-color: $white;
+
+@import 'bootstrap';
+
+body {
+    background-color: $primary;
+}
+
+.btn-xlg {
+    padding: 0.5rem 2rem;
+    font-size: 2rem;
+}
+
+.image-border {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: $white;
+    margin: 10px 20px;
+}
+
+.image-border::before,
+.image-border::after {
+    content: "";
+    flex-grow: 1;
+    background: $white;
+    height: 3px;
+    font-size: 0px;
+    line-height: 0px;
+    margin: 0px 10px;
+}
